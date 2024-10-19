@@ -15,6 +15,8 @@ namespace QuanLyNhanSu
         public frmHoSoNV()
         {
             InitializeComponent();
+            dateNgaySinh.Format = DateTimePickerFormat.Custom;
+            dateNgaySinh.CustomFormat = "dd MMM yyyy";
         }
     }
 }

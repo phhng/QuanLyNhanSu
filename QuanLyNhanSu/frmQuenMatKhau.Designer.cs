@@ -47,19 +47,20 @@
             this.checkBox1.Location = new System.Drawing.Point(550, 426);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(184, 29);
-            this.checkBox1.TabIndex = 32;
+            this.checkBox1.TabIndex = 42;
             this.checkBox1.Text = "Hiển thị mật khẩu";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // txtConfirm
             // 
             this.txtConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirm.Location = new System.Drawing.Point(550, 373);
+            this.txtConfirm.Location = new System.Drawing.Point(550, 368);
             this.txtConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirm.Name = "txtConfirm";
             this.txtConfirm.PasswordChar = '*';
+            this.txtConfirm.ReadOnly = true;
             this.txtConfirm.Size = new System.Drawing.Size(419, 34);
-            this.txtConfirm.TabIndex = 31;
+            this.txtConfirm.TabIndex = 41;
             this.txtConfirm.UseSystemPasswordChar = true;
             // 
             // txtPassword
@@ -69,17 +70,18 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(419, 34);
-            this.txtPassword.TabIndex = 30;
+            this.txtPassword.TabIndex = 40;
             // 
             // txtNewPassword
             // 
             this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(550, 307);
+            this.txtNewPassword.Location = new System.Drawing.Point(550, 310);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
+            this.txtNewPassword.ReadOnly = true;
             this.txtNewPassword.Size = new System.Drawing.Size(419, 34);
-            this.txtNewPassword.TabIndex = 23;
+            this.txtNewPassword.TabIndex = 33;
             this.txtNewPassword.UseSystemPasswordChar = true;
             // 
             // btnThoat
@@ -89,7 +91,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(183, 54);
-            this.btnThoat.TabIndex = 25;
+            this.btnThoat.TabIndex = 35;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
@@ -100,7 +102,7 @@
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(183, 54);
-            this.btnXacNhan.TabIndex = 24;
+            this.btnXacNhan.TabIndex = 34;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             // 
@@ -113,7 +115,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(319, 52);
-            this.label2.TabIndex = 29;
+            this.label2.TabIndex = 39;
             this.label2.Text = "Quên mật khẩu";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -122,11 +124,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(292, 376);
+            this.label4.Location = new System.Drawing.Point(292, 371);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(250, 29);
-            this.label4.TabIndex = 27;
+            this.label4.TabIndex = 37;
             this.label4.Text = "Nhập lại mật khẩu mới";
             // 
             // label3
@@ -134,11 +136,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(292, 312);
+            this.label3.Location = new System.Drawing.Point(292, 313);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 29);
-            this.label3.TabIndex = 28;
+            this.label3.TabIndex = 38;
             this.label3.Text = "Nhập mật khẩu mới";
             // 
             // label1
@@ -146,11 +148,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 257);
+            this.label1.Location = new System.Drawing.Point(292, 255);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 29);
-            this.label1.TabIndex = 26;
+            this.label1.TabIndex = 36;
             this.label1.Text = "Nhập Email";
             // 
             // frmQuenMatKhau
