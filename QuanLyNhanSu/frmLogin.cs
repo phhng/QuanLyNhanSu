@@ -20,11 +20,11 @@ namespace QuanLyNhanSu
 
         private int checkRole()
         {
-            int temp = -1;
+            int role = -1;
             //if có tên trong database là quản trị thì trả về 1
             //if else nvns thì trả về 2 còn lại là nhân viên,
             //hoặc k có chức vụ thì trả về -1 -> báo lỗi
-            return temp;
+            return role;
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -33,29 +33,48 @@ namespace QuanLyNhanSu
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text == "" || txtPassword.Text == "")// Thêm database để đăng nhập
+            try
             {
-                if (txtUsername.Text == "")
+                bool hasError = false; //Hàm này dùng để ktra lỗi để k nhảy ra hàm thêm nếu có lỗi
+                string ten = txtUsername.Text;
+                string pass = txtPassword.Text;
+                if (ten == "" || pass == "") // Thêm database để đăng nhập
                 {
-                    err.SetError(txtUsername, "Không được để trống tên đăng nhập!");
+                    if (ten == "")
+                    {
+                        err.SetError(txtUsername, "Không được để trống tên đăng nhập!");
+                        hasError = true;
+                    }
+                    else if (pass == "")
+                    {
+                        err.SetError(txtPassword, "Không được để trống mật khẩu!");
+                        hasError = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không được để trống 2 khung!","Thông báo",MessageBoxButtons.OK);
+                        hasError = true;
+                    }
                 }
-                else if (txtPassword.Text == "")
+                string temp = ""; //đổi temp = hàm trong database
+                if (txtUsername.Text != temp || txtPassword.Text != temp)
                 {
-                    err.SetError(txtPassword, "Không được để trống mật khẩu!");
+                    MessageBox.Show("Người dùng không tồn tại trong hệ thống!", "Thông báo", MessageBoxButtons.OK);
+                    hasError = true;
                 }
-                else
+                else if (txtUsername.Text == temp && txtPassword.Text != temp)
                 {
-                    //Thêm khai báo lỗi dưới 2 fields
-                }
-            }
-            string temp = ""; //đổi temp = hàm trong database
-            if(txtUsername.Text != temp || txtPassword.Text != temp)
-            {
-                MessageBox.Show("Người dùng không tồn tại trong hệ thống!");
-            }
-            else if(txtUsername.Text == temp && txtPassword.Text != temp)
-            {
 
+                    hasError = true;
+                }
+                if (!hasError)
+                {
+                    //thêm hàm nhập
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
