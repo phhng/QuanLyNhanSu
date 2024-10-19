@@ -33,7 +33,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.chkShowPass = new System.Windows.Forms.CheckBox();
             this.txtChucVu = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -115,7 +114,6 @@
             this.txtID.Location = new System.Drawing.Point(464, 58);
             this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
-            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(437, 30);
             this.txtID.TabIndex = 1;
             // 
@@ -133,7 +131,6 @@
             this.txtHoTen.Location = new System.Drawing.Point(464, 110);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(437, 30);
             this.txtHoTen.TabIndex = 2;
             // 
@@ -152,7 +149,6 @@
             this.txtChucVu.Location = new System.Drawing.Point(464, 265);
             this.txtChucVu.Margin = new System.Windows.Forms.Padding(4);
             this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.ReadOnly = true;
             this.txtChucVu.Size = new System.Drawing.Size(437, 30);
             this.txtChucVu.TabIndex = 5;
             // 
@@ -162,7 +158,6 @@
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.ReadOnly = true;
             this.txtPass.Size = new System.Drawing.Size(437, 30);
             this.txtPass.TabIndex = 4;
             this.txtPass.UseSystemPasswordChar = true;
@@ -172,7 +167,6 @@
             this.txtEmail.Location = new System.Drawing.Point(464, 369);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(437, 30);
             this.txtEmail.TabIndex = 7;
             // 
@@ -181,7 +175,6 @@
             this.txtPhongBan.Location = new System.Drawing.Point(464, 317);
             this.txtPhongBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhongBan.Name = "txtPhongBan";
-            this.txtPhongBan.ReadOnly = true;
             this.txtPhongBan.Size = new System.Drawing.Size(437, 30);
             this.txtPhongBan.TabIndex = 6;
             // 
@@ -382,7 +375,6 @@
         private System.Windows.Forms.TextBox txtChucVu;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.CheckBox chkShowPass;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.LinkLabel linkChangePass;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

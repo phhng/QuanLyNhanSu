@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constraints.cs" />
     <Compile Include="frmBaoCaoNhanSu.cs">
       <SubType>Form</SubType>
     </Compile>

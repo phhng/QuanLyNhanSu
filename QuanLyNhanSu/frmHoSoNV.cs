@@ -16,7 +16,15 @@ namespace QuanLyNhanSu
         {
             InitializeComponent();
             dateNgaySinh.Format = DateTimePickerFormat.Custom;
-            dateNgaySinh.CustomFormat = "dd MMM yyyy";
+            dateNgaySinh.CustomFormat = "dd/MM/yyyy";
+        }
+        private void setButton(bool a)
+        {
+            btnAvaUpload.Visible = !a;
+            btnAvaXoa.Visible = !a;
+            btnHuy.Enabled = !a;
+            btnLuu.Enabled = !a;
+            btnSuaThongTin.Enabled = a;
         }
     }
 }
