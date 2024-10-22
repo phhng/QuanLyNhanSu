@@ -65,16 +65,15 @@ namespace QuanLyNhanSu
     }
 }
 /*
- Một số ví dụ để xài trong bài
+Một số ví dụ để xài trong bài
 Ưu tiên gọi GenericRepository ở đầu class
 
-Kiểu dữ liệu var có thể bỏ ở trong hoặc ở ngoài phương thức nhưng ưu tiên bỏ bên trong phương thức để
-k quá tải dữ liệu lúc chạy form
+var chỉ có thể bỏ vào method 
 
 ví dụ:
 
 public class frmNhanVien(){
-    var employeeRepository = new GenericRepository<HOSONV>();
+    GenericRepository<HOSONV>() employeeRepository = new GenericRepository<HOSONV>();
     private void LoadForm(){
         var allEmployees = employeeRepository.GetAll();
         ........
