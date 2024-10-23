@@ -18,6 +18,7 @@ namespace QuanLyNhanSu
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmLogin());
             Application.Run(new frmHoSoNV());
+            //Application.Run(new frmQuanLyThongTinNhanVien());
         }
     }
 }
