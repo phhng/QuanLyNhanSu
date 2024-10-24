@@ -90,7 +90,9 @@ var chỉ có thể bỏ vào method
 ví dụ:
 
 public class frmNhanVien(){
+
     GenericRepository<HOSONV> employeeRepository = new GenericRepository<HOSONV>();
+
     private void LoadForm(){
         var allEmployees = employeeRepository.GetAll();
         ........
