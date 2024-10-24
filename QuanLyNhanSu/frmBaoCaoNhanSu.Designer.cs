@@ -57,21 +57,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(359, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(318, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(410, 46);
+            this.label1.Size = new System.Drawing.Size(334, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "BÁO CÁO NHÂN SỰ";
             // 
             // dgvBaoCaoNhanSu
             // 
             this.dgvBaoCaoNhanSu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBaoCaoNhanSu.Location = new System.Drawing.Point(12, 131);
+            this.dgvBaoCaoNhanSu.Location = new System.Drawing.Point(9, 106);
+            this.dgvBaoCaoNhanSu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvBaoCaoNhanSu.Name = "dgvBaoCaoNhanSu";
             this.dgvBaoCaoNhanSu.RowHeadersWidth = 51;
             this.dgvBaoCaoNhanSu.RowTemplate.Height = 24;
-            this.dgvBaoCaoNhanSu.Size = new System.Drawing.Size(1060, 494);
+            this.dgvBaoCaoNhanSu.Size = new System.Drawing.Size(926, 401);
             this.dgvBaoCaoNhanSu.TabIndex = 1;
             this.dgvBaoCaoNhanSu.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBaoCaoNhanSu_CellValueChanged);
             this.dgvBaoCaoNhanSu.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvBaoCaoNhanSu_CurrentCellDirtyStateChanged);
@@ -80,9 +80,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(885, 52);
+            this.label2.Location = new System.Drawing.Point(778, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 20);
+            this.label2.Size = new System.Drawing.Size(157, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Công Ty TNHH Nhóm 4";
             // 
@@ -90,9 +91,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Location = new System.Drawing.Point(9, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 25);
+            this.label3.Size = new System.Drawing.Size(194, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "QUẢN LÝ NHÂN SỰ SỐ...";
             // 
@@ -118,7 +120,7 @@
             this.inext});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1102, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(946, 27);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -128,7 +130,7 @@
             this.back.Image = ((System.Drawing.Image)(resources.GetObject("back.Image")));
             this.back.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(29, 25);
+            this.back.Size = new System.Drawing.Size(24, 24);
             this.back.Text = "toolStripButton1";
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
@@ -138,14 +140,14 @@
             this.next.Image = ((System.Drawing.Image)(resources.GetObject("next.Image")));
             this.next.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.next.Name = "next";
-            this.next.Size = new System.Drawing.Size(29, 25);
+            this.next.Size = new System.Drawing.Size(24, 24);
             this.next.Text = "toolStripButton2";
             this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(6, 28);
+            this.toolStripButton3.Size = new System.Drawing.Size(6, 27);
             // 
             // save
             // 
@@ -153,7 +155,7 @@
             this.save.Image = ((System.Drawing.Image)(resources.GetObject("save.Image")));
             this.save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(29, 25);
+            this.save.Size = new System.Drawing.Size(24, 24);
             this.save.Text = "toolStripButton1";
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
@@ -163,7 +165,7 @@
             this.refresh.Image = ((System.Drawing.Image)(resources.GetObject("refresh.Image")));
             this.refresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(29, 25);
+            this.refresh.Size = new System.Drawing.Size(24, 24);
             this.refresh.Text = "toolStripButton6";
             this.refresh.Click += new System.EventHandler(this.refresh_Click);
             // 
@@ -173,21 +175,21 @@
             this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
             this.exit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(29, 25);
+            this.exit.Size = new System.Drawing.Size(24, 24);
             this.exit.Text = "toolStripButton7";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // word
             // 
             this.word.Image = ((System.Drawing.Image)(resources.GetObject("word.Image")));
             this.word.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.word.Name = "word";
-            this.word.Size = new System.Drawing.Size(29, 25);
+            this.word.Size = new System.Drawing.Size(24, 24);
             this.word.Click += new System.EventHandler(this.word_Click);
             // 
             // excel
@@ -196,18 +198,18 @@
             this.excel.Image = ((System.Drawing.Image)(resources.GetObject("excel.Image")));
             this.excel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.excel.Name = "excel";
-            this.excel.Size = new System.Drawing.Size(29, 25);
+            this.excel.Size = new System.Drawing.Size(24, 24);
             this.excel.Click += new System.EventHandler(this.excel_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // size
             // 
             this.size.Name = "size";
-            this.size.Size = new System.Drawing.Size(121, 28);
+            this.size.Size = new System.Drawing.Size(92, 27);
             this.size.SelectedIndexChanged += new System.EventHandler(this.size_SelectedIndexChanged);
             // 
             // txtSearch
@@ -216,39 +218,39 @@
             this.txtSearch.Enabled = false;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(150, 28);
+            this.txtSearch.Size = new System.Drawing.Size(114, 27);
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // find
             // 
             this.find.Name = "find";
-            this.find.Size = new System.Drawing.Size(42, 25);
+            this.find.Size = new System.Drawing.Size(35, 24);
             this.find.Text = "Find";
             this.find.Click += new System.EventHandler(this.find_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // inext
             // 
             this.inext.Name = "inext";
-            this.inext.Size = new System.Drawing.Size(46, 25);
+            this.inext.Size = new System.Drawing.Size(37, 24);
             this.inext.Text = "Next";
             // 
             // frmBaoCaoNhanSu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1102, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvBaoCaoNhanSu);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmBaoCaoNhanSu";
             this.Text = "Báo cáo nhân sự";
             this.Load += new System.EventHandler(this.frmBaoCaoNhanSu_Load);

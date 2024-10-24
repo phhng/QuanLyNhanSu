@@ -1,6 +1,7 @@
 ﻿using QuanLyNhanSu.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,17 @@ namespace QuanLyNhanSu
             return context.Set<T>().FirstOrDefault(e => EqualityComparer<TKey>.Default.Equals(keySelector(e), id));
         }
 
+        public void Update(TRANGTHAINV entity)
+        {
+            context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
+        }
+
+
+        public TRANGTHAINV FindByEmployeeID(string ID)
+        {
+            return context.TRANGTHAINVs.FirstOrDefault(nv => nv.MANV == ID);
+        }
         public void InsertUpdate(T entity, Func<T, bool> existsFilter)
         {
             var existingEntity = context.Set<T>().FirstOrDefault(existsFilter);

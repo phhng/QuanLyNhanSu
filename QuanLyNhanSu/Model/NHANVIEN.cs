@@ -12,13 +12,12 @@ namespace QuanLyNhanSu.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NHANVIEN()
         {
-            BHXHs = new HashSet<BHXH>();
-            BHYTs = new HashSet<BHYT>();
+            BAOHIEMs = new HashSet<BAOHIEM>();
             CHAMCONGs = new HashSet<CHAMCONG>();
             HOPDONGs = new HashSet<HOPDONG>();
             LUONGs = new HashSet<LUONG>();
-            PHIEUPHUs = new HashSet<PHIEUPHU>();
             PHUCAPs = new HashSet<PHUCAP>();
+            TANGCAs = new HashSet<TANGCA>();
             TRANGTHAINVs = new HashSet<TRANGTHAINV>();
             UNGLUONGs = new HashSet<UNGLUONG>();
         }
@@ -41,10 +40,7 @@ namespace QuanLyNhanSu.Model
         public string LOAI_NV { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BHXH> BHXHs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BHYT> BHYTs { get; set; }
+        public virtual ICollection<BAOHIEM> BAOHIEMs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHAMCONG> CHAMCONGs { get; set; }
@@ -64,10 +60,10 @@ namespace QuanLyNhanSu.Model
         public virtual PHONGBAN PHONGBAN { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHIEUPHU> PHIEUPHUs { get; set; }
+        public virtual ICollection<PHUCAP> PHUCAPs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHUCAP> PHUCAPs { get; set; }
+        public virtual ICollection<TANGCA> TANGCAs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TRANGTHAINV> TRANGTHAINVs { get; set; }
