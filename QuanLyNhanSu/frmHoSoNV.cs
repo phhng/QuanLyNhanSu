@@ -16,12 +16,9 @@ namespace QuanLyNhanSu
         private string originalGioiTinh;
         private string originalAvatarPath;
         private string avatarFilePath = string.Empty;
-
         public frmHoSoNV()
         {
             InitializeComponent();
-            dateNgaySinh.Format = DateTimePickerFormat.Custom;
-            dateNgaySinh.CustomFormat = "dd/MM/yyyy";
         }
 
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)
@@ -50,14 +47,10 @@ namespace QuanLyNhanSu
             btnAvaUpload.Visible = true;
             btnAvaXoa.Visible = true;
             //Sửa thông tin
-            txtMaHS.Enabled = false;
             txtID.Enabled = false;
             txtHoTen.Enabled = false;
             txtChucVu.Enabled = false;
             txtPhongBan.Enabled = false;
-            txtCccdCmnd.Enabled = true;
-            txtDiaChi.Enabled = true;
-            txtQueQuan.Enabled = true;
             txtEmail.Enabled = false;
             txtPass.Enabled = false;
             dateNgaySinh.Enabled = true;
@@ -74,33 +67,17 @@ namespace QuanLyNhanSu
             btnAvaUpload.Visible = false;
             btnAvaXoa.Visible = false;
             //Chỉ xem thông tin
-            txtMaHS.Enabled = false;
             txtID.Enabled = false;
             txtHoTen.Enabled = false;
             txtChucVu.Enabled = false;
             txtPhongBan.Enabled = false;
             txtEmail.Enabled = false;
-            txtCccdCmnd.Enabled = false;
-            txtDiaChi.Enabled = false;
-            txtQueQuan.Enabled = false;
             txtPass.Enabled = false;
             dateNgaySinh.Enabled = false;
             btnNam.Enabled = false;
             btnNu.Enabled = false;
         }
-        /*
-        CREATE TABLE HOSONV(
-    MAHS CHAR(10) PRIMARY KEY, -- Mã Hồ Sơ
-    MABC INT FOREIGN KEY REFERENCES BANGCAP(MABC), -- Mã Bằng Cấp
-    HOTEN NVARCHAR(100), -- Họ Tên
-    NGAYSINH DATE, -- Ngày Sinh
-    GIOITINH NVARCHAR(10), -- Giới Tính
-    CCCD_CMND CHAR(20), -- CCCD/CMND
-    AVATAR NVARCHAR(255), -- Ảnh Đại Diện(Đường Dẫn Tệp)
-    DIACHI NVARCHAR(255), -- Địa Chỉ
-    QUEQUAN NVARCHAR(255) -- Quê Quán
-);
-        */
+
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
             suaThongTin();
