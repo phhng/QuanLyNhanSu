@@ -1,6 +1,7 @@
 ﻿using QuanLyNhanSu.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +27,28 @@ namespace QuanLyNhanSu
             return context.Set<T>().ToList();
         }
 
+        public List<TResult> GetSelected<TResult>(Func<T, TResult> selector)
+        {
+            return context.Set<T>().Select(selector).ToList();
+        }
+
         // Tìm thực thể theo ID
         public T FindById<TKey>(TKey id, Func<T, TKey> keySelector)
         {
             return context.Set<T>().FirstOrDefault(e => EqualityComparer<TKey>.Default.Equals(keySelector(e), id));
         }
 
+        public void Update(TRANGTHAINV entity)
+        {
+            context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
+        }
+
+
+        public TRANGTHAINV FindByEmployeeID(string ID)
+        {
+            return context.TRANGTHAINVs.FirstOrDefault(nv => nv.MANV == ID);
+        }
         public void InsertUpdate(T entity, Func<T, bool> existsFilter)
         {
             var existingEntity = context.Set<T>().FirstOrDefault(existsFilter);
@@ -73,7 +90,9 @@ var chỉ có thể bỏ vào method
 ví dụ:
 
 public class frmNhanVien(){
-    GenericRepository<HOSONV>() employeeRepository = new GenericRepository<HOSONV>();
+
+    GenericRepository<HOSONV> employeeRepository = new GenericRepository<HOSONV>();
+
     private void LoadForm(){
         var allEmployees = employeeRepository.GetAll();
         ........

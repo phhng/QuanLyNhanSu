@@ -6,8 +6,8 @@ namespace QuanLyNhanSu.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("PHIEUPHU")]
-    public partial class PHIEUPHU
+    [Table("TANGCA")]
+    public partial class TANGCA
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -22,7 +22,11 @@ namespace QuanLyNhanSu.Model
         [StringLength(50)]
         public string HINHTHUC { get; set; }
 
+        public decimal? HESO { get; set; }
+
         public decimal? SOGIO { get; set; }
+
+        public decimal? TIENTANGCA { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
     }

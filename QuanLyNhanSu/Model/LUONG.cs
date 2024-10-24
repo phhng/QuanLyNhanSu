@@ -19,8 +19,6 @@ namespace QuanLyNhanSu.Model
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int BACLUONG { get; set; }
 
-        public decimal? LUONGCB { get; set; }
-
         public decimal? PHUCAP { get; set; }
 
         public decimal? TONGTHUONG { get; set; }
