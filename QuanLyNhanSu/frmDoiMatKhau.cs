@@ -17,6 +17,9 @@ namespace QuanLyNhanSu
             InitializeComponent();
         }
 
-        
+        private void frmDoiMatKhau_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
