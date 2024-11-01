@@ -6,15 +6,18 @@ namespace QuanLyNhanSu.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("BHYT")]
-    public partial class BHYT
+    [Table("BAOHIEM")]
+    public partial class BAOHIEM
     {
         [StringLength(10)]
         public string MANV { get; set; }
 
         [Key]
         [StringLength(10)]
-        public string MABHYT { get; set; }
+        public string MABAOHIEM { get; set; }
+
+        [StringLength(50)]
+        public string LOAIBAOHIEM { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? NGAYLAP { get; set; }

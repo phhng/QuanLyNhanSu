@@ -8,46 +8,35 @@ namespace QuanLyNhanSu.Model
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model1")
+            : base("name=Model11")
         {
         }
 
         public virtual DbSet<BANGCAP> BANGCAPs { get; set; }
-        public virtual DbSet<BHXH> BHXHs { get; set; }
-        public virtual DbSet<BHYT> BHYTs { get; set; }
+        public virtual DbSet<BAOHIEM> BAOHIEMs { get; set; }
         public virtual DbSet<CHAMCONG> CHAMCONGs { get; set; }
         public virtual DbSet<CHUCVU> CHUCVUs { get; set; }
         public virtual DbSet<HOPDONG> HOPDONGs { get; set; }
         public virtual DbSet<HOSONV> HOSONVs { get; set; }
         public virtual DbSet<LUONG> LUONGs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
-        public virtual DbSet<PHIEUPHU> PHIEUPHUs { get; set; }
         public virtual DbSet<PHONGBAN> PHONGBANs { get; set; }
         public virtual DbSet<PHUCAP> PHUCAPs { get; set; }
         public virtual DbSet<QUYEN> QUYENs { get; set; }
+        public virtual DbSet<TANGCA> TANGCAs { get; set; }
         public virtual DbSet<TRANGTHAINV> TRANGTHAINVs { get; set; }
         public virtual DbSet<UNGLUONG> UNGLUONGs { get; set; }
         public virtual DbSet<USER> USERS { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BHXH>()
+            modelBuilder.Entity<BAOHIEM>()
                 .Property(e => e.MANV)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<BHXH>()
-                .Property(e => e.MABHXH)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<BHYT>()
-                .Property(e => e.MANV)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<BHYT>()
-                .Property(e => e.MABHYT)
+            modelBuilder.Entity<BAOHIEM>()
+                .Property(e => e.MABAOHIEM)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -106,15 +95,6 @@ namespace QuanLyNhanSu.Model
                 .WithRequired(e => e.NHANVIEN)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<PHIEUPHU>()
-                .Property(e => e.MANV)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUPHU>()
-                .Property(e => e.SOGIO)
-                .HasPrecision(5, 2);
-
             modelBuilder.Entity<PHUCAP>()
                 .Property(e => e.MAPC)
                 .IsFixedLength()
@@ -129,6 +109,23 @@ namespace QuanLyNhanSu.Model
                 .HasMany(e => e.USERS)
                 .WithMany(e => e.QUYENs)
                 .Map(m => m.ToTable("USER_ROLES").MapLeftKey("ROLE_ID").MapRightKey("USER_ID"));
+
+            modelBuilder.Entity<TANGCA>()
+                .Property(e => e.MANV)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<TANGCA>()
+                .Property(e => e.HESO)
+                .HasPrecision(5, 2);
+
+            modelBuilder.Entity<TANGCA>()
+                .Property(e => e.SOGIO)
+                .HasPrecision(5, 2);
+
+            modelBuilder.Entity<TANGCA>()
+                .Property(e => e.TIENTANGCA)
+                .HasPrecision(5, 2);
 
             modelBuilder.Entity<TRANGTHAINV>()
                 .Property(e => e.MANV)

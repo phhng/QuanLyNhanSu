@@ -22,6 +22,8 @@ namespace QuanLyNhanSu.Model
         [Column(TypeName = "date")]
         public DateTime? TUNGAY { get; set; }
 
+        public decimal? LUONGCB { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime? DENNGAY { get; set; }
 

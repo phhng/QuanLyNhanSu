@@ -16,11 +16,11 @@ namespace QuanLyNhanSu.Model
         [StringLength(10)]
         public string MANV { get; set; }
 
+        public int? TONGSONGAY { get; set; }
+
         public int? THANG { get; set; }
 
         public int? NAM { get; set; }
-
-        public int? TONGSONGAY { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
     }
